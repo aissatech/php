@@ -8,7 +8,7 @@
 	$rif = $pieces['2'];
 	
 	//connessione al db
-	$conn = mysql_connect("192.168.1.1:3306", "userName", "pwd") or die ('Errore di connessione al server: ' . mysql_error());
+	$conn = mysql_connect("dbServerName", "userName", "pwd") or die ('Errore di connessione al server: ' . mysql_error());
 	mysql_select_db("dbName", $conn) or die ('Errore di connessione al db: ' . mysql_error());
 
 
